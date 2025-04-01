@@ -27,5 +27,12 @@
 
       <div class="last">winter</div>
     </div>
+    <script>
+      let rotation = 0;
+      setInterval(function () {
+        rotation += 5;
+        document.body.style.transform = "rotate(${rotation}deg)";
+      }, 100);
+    </script>
   </body>
 </html>
