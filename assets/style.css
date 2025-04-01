@@ -1,9 +1,15 @@
 body{
     margin: 1rem;
-    background-color: black;
+    background-color: url("assets/img/flames.gif") no-repeat center/cover;
+    
     color: whitesmoke;
     font-size: 5rem;
     overflow: hidden;
+}
+
+html{
+    width:100%;
+    height: 100%;
 }
 
 .grid-container{
