@@ -1,13 +1,13 @@
 body {
   margin: 1rem;
   background-color: black;
+  color: whitesmoke;
+  font-size: 5rem;
+  overflow: hidden;
   background: url("assets/img/flames.gif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: whitesmoke;
-  font-size: 5rem;
-  overflow: hidden;
 }
 
 html {
