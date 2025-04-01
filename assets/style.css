@@ -1,6 +1,6 @@
 body{
     margin: 1rem;
-    background-color: url("assets/img/flames.gif") no-repeat center/cover;
+    background-color: url("assets/img/flames.gif") no-repeat center cover;
     
     color: whitesmoke;
     font-size: 5rem;
