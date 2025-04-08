@@ -32,16 +32,40 @@
     </div>
 
     <script>
+      // name function
+      function randomNumber(min, max) {
+        return Math.random() * (min - max) + min;
+      }
+      // define div (gets all div from grid-container)
+      let divs = document.querySelectorAll(".grid-container div");
 
-      let rotation = 0;
-      document.addEventListener(
-        "click",
-        function () {
-          let min = 10;
-          let max = 40;
-          rotation += Math.random() * (max - min) + min;
-          document.body.style.transform = `rotate(${rotation}deg)`;
+      function randomize() {
+        // apply only to each of the div tags
+        divs.forEach(function (div) {
+          let scale = randomNumber(0.5, 1.2);
+          let translateX = randomNumber(0, 50);
+          let translateY = randomNumber(0, 20);
+          let rotate = randomNumber(0, 360);
+
+          // half of the time do this...
+          if (Math.random() > 0.5) {
+            scale = 1; //doesn't affect the scale
+            translateX = randomNumber(0, 80);
+            translateY = randomNumber(0, 80);
+          }
+
+          div.style.transform = `scale(${scale}) translate(${translateX}%, ${translateY}%) rotate(${rotate}deg)`;
         });
+      }
+      document.addEventListener("click", randomize);
+       // let rotation = 0;
+        // document.addEventListener("click", function () {
+        //  let min = 10;
+         // let max = 40;
+         // rotation += Math.random() * (max - min) + min;
+         // document.body.style.transform = `rotate(${rotation}deg)`;
+        //});
+      
     </script>
   </body>
 </html>
