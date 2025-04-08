@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./assets/style.css" />
     <!-- Chapter 06 : Off The Grid -->
     <!-- Apply A Haiku Off Grid -->
+    <!--Notes:
+          div tags live in a container = use to organize
+     -->
   </head>
   <body>
     <div class="grid-container">
@@ -27,12 +30,21 @@
 
       <div class="last">winter</div>
     </div>
+
     <script>
+      document.body.style.opacity =.5
+
       let rotation = 0;
-      setInterval(function () {
-        rotation += 5;
-        document.body.style.transform = "rotate(${rotation}deg)";
-      }, 100);
+      document.addEventListener(
+        "click",
+        function () {
+          let min = 10;
+          let max = 40;
+          rotation += Math.random() * (max - min) + min;
+          document.body.style.transform = "rotate(${rotation}deg)";
+        },
+        100
+      );
     </script>
   </body>
 </html>
