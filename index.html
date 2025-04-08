@@ -32,7 +32,6 @@
     </div>
 
     <script>
-      document.body.style.transform = `rotate(90deg)`;
 
       let rotation = 0;
       document.addEventListener(
@@ -42,9 +41,7 @@
           let max = 40;
           rotation += Math.random() * (max - min) + min;
           document.body.style.transform = `rotate(${rotation}deg)`;
-        },
-        100
-      );
+        });
     </script>
   </body>
 </html>
