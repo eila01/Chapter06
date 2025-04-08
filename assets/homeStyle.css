@@ -21,7 +21,7 @@
     /* overflow allow the changes to the page (hidden allow invisibilty to text to hide behind screen)*/
     overflow: hidden;
     /* NOTE: CHANGE BG*/
-    background: url("img/flames.gif");
+    /* background: url("img/flames.gif"); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -43,8 +43,14 @@
 
   .code{
     font-family: "Libre Barcode 39 Text", system-ui;
+    color: #698f3f;
   }
 
   .art{
     font-family: "Love Ya Like A Sister", cursive;
+  }
+  
+  body{
+    transition-property: transform;
+    transition-duration: 3s;
   }
