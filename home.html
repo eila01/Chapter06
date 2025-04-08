@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Interactive Poem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/homeStyle.css" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=Libre+Barcode+39+Text&family=Love+Ya+Like+A+Sister&family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Haiku -->
+    <!--Notes:
+         
+     -->
+  </head>
+  <body>
+    <div class="grid-container">
+      <div>A</div>
+      <div>radiant</div>
+
+      <div class="last">young</div>
+
+      <div>woman</div>
+      <div>to</div>
+      <div>light</div>
+      <div>the</div>
+
+      <div class="last">darkest</div>
+
+      <div>corners</div>
+      <div>of</div>
+
+      <div class="last">winter</div>
+    </div>
+
+    <script>
+
+      let rotation = 0;
+      document.addEventListener(
+        "click",
+        function () {
+          let min = 10;
+          let max = 40;
+          rotation += Math.random() * (max - min) + min;
+          document.body.style.transform = `rotate(${rotation}deg)`;
+        });
+    </script>
+  </body>
+</html>
