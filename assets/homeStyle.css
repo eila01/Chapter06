@@ -1,56 +1,123 @@
 @keyframes fadeOut {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
 
-  html {
-    width: 100%;
-    height: 100%;
-  }
+html {
+  width: 100%;
+  height: 100%;
+}
 
-  body {
-    margin: 1rem;
-    background-color: #0a122a;
-    color: #fbfaf8;
-    font-family: "Labrada", serif;
-    font-size: 5rem;
-    /* overflow allow the changes to the page (hidden allow invisibilty to text to hide behind screen)*/
-    overflow: hidden;
-    /* NOTE: CHANGE BG*/
-    /* background: url("img/flames.gif"); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    animation-name: fadeOut;
-    animation-duration: 2s;
-  }
-  
+body {
+  margin: 1rem;
+  background-color: #0a122a;
+  color: #fbfaf8;
+  font-family: "Labrada", serif;
+  font-size: 5rem;
+  /* overflow allow the changes to the page (hidden allow invisibilty to text to hide behind screen)*/
+  overflow: hidden;
+  /* NOTE: CHANGE BG*/
+  /* background: url("img/flames.gif"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation-name: fadeOut;
+  animation-duration: 2s;
+}
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
-    margin: 15% 4rem 0 4rem;
-  }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin: 15% 4rem 0 4rem;
+}
 
-  .word{
-    font-family: "Martian Mono", monospace;
-  }
+.word {
+  font-family: "Martian Mono", monospace;
+}
 
-  .code{
-    font-family: "Libre Barcode 39 Text", system-ui;
-    color: #698f3f;
-  }
+.code {
+  font-family: "Libre Barcode 39 Text", system-ui;
+  color: #698f3f;
+}
 
-  .art{
-    font-family: "Love Ya Like A Sister", cursive;
-  }
-  
-  body{
-    transition-property: transform;
-    transition-duration: 3s;
-  }
+.art {
+  font-family: "Love Ya Like A Sister", cursive;
+}
+
+body {
+  transition-property: transform;
+  transition-duration: 3s;
+}
+
+aside.compatibility ul {
+  margin-top: 64px;
+  list-style-type: none;
+}
+
+aside.compatibility .software1 {
+  position: relative;
+}
+
+aside.compatibility li {
+  display: inline-block;
+  padding-top: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0px;
+  width: 40px;
+  height: 40px;
+  line-height: 2;
+}
+
+.overlay {
+  display: inline-table;
+  position: absolute;
+  top: 0px;
+  width: 80%;
+  height: 100%;
+
+  padding: 10%;
+  text-align: center;
+  z-index: 10;
+  visibility: visible;
+  vertical-align: middle;
+}
+
+.actual {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  width: 80%;
+  height: 80%;
+
+  padding: 10%;
+  text-align: center;
+  z-index: 0;
+  visibility: hidden;
+  vertical-align: middle;
+}
+
+.actual {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  width: 80%;
+  height: 80%;
+
+  z-index: 0;
+  visibility: hidden;
+  vertical-align: middle;
+}
+
+aside.compatibility .software1:hover .actual {
+  visibility: visible;
+}
+
+aside.compatibility .software1:hover .overlay {
+  visibility: hidden;
+}
