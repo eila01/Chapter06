@@ -2,70 +2,119 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Off the Grid</title>
+    <title>Interactive Poem</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <!-- Chapter 06 : Off The Grid -->
-    <!-- Apply A Haiku Off Grid -->
+    <link rel="stylesheet" href="./assets/homeStyle.css" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=Libre+Barcode+39+Text&family=Love+Ya+Like+A+Sister&family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Haiku -->
     <!--Notes:
-          div tags live in a container = use to organize
+         
      -->
   </head>
   <body>
     <div class="grid-container">
-      <div>A</div>
-      <div>radiant</div>
 
-      <div class="last">young</div>
-
-      <div>woman</div>
+      <div class="Words">Words</div>
       <div>to</div>
-      <div>light</div>
-      <div>the</div>
+      <div class="Code">Code</div>
+      <div>to</div>
+      <div class="Art">Art</div>
 
-      <div class="last">darkest</div>
+      <aside class="compatibility">
+        <ul>
+             <li class="software1">      
+      <div class = "overlay">01010100 01101000 01100101</div>
+      <div class = "actual">The</div>
+             </li>
+             </ul>
+             </aside>
 
-      <div>corners</div>
-      <div>of</div>
+      <div>Image</div>
 
-      <div class="last">winter</div>
+      <aside class = "compatibility">
+        <ul>
+          <li>
+      <div class = "overlay">01100011 01100001 01101110</div>
+      <div class = "actual">Can</div>
+     </li>
+    </ul> 
+    </aside>
+
+    <aside class="compatibility">
+      <ul>
+           <li class="software1"> 
+      <div class = "overlay">01110011 01110000 01100101 01100001 01101011</div>
+      <div class = "actual">Speak</div>
+    </li>
+  </ul> 
+  </aside>
+
+  <aside class="compatibility">
+    <ul>
+         <li class="software1"> 
+      <div class = "overlay">01101001 01110100 01110011 01100101 01101100 01100110</div>
+      <div class = "actual">Itself</div>
+    </li>
+  </ul> 
+  </aside>
+
+      <aside class="compatibility">
+        <ul>
+             <li class="software1"> 
+      <div class = "overlay">01110000 01101100 01100001 01111001</div>
+      <div class = "actual">play</div>
+</li>
+  </ul> 
+  </aside>
+
+      <aside class="compatibility">
+        <ul>
+             <li class="software1"> 
+      <div class = "overlay">01101111 01100110</div>
+      <div class = "actual">of</div>
+</li>
+  </ul> 
+  </aside>
+
+      <div class = "Art">art</div>
+
+      <aside class="compatibility">
+        <ul>
+             <li class="software1"> 
+      <div class = "overlay">01110100 01101111</div>
+      <div class = "actual">to</div>
+</li>
+  </ul> 
+  </aside>
+
+      <aside class="compatibility">
+        <ul>
+             <li class="software1"> 
+      <div class = "overlay">01110011 01100101 01101100 01100110</div>
+      <div class = "actual">self</div>
+</li>
+  </ul> 
+  </aside>
+      
     </div>
 
     <script>
-      // name function
-      function randomNumber(min, max) {
-        return Math.random() * (min - max) + min;
-      }
-      // define div (gets all div from grid-container)
-      let divs = document.querySelectorAll(".grid-container div");
-
-      function randomize() {
-        // apply only to each of the div tags
-        divs.forEach(function (div) {
-          let scale = randomNumber(0.5, 1.2);
-          let translateX = randomNumber(0, 50);
-          let translateY = randomNumber(0, 20);
-          let rotate = randomNumber(0, 360);
-
-          // half of the time do this...
-          if (Math.random() > 0.5) {
-            scale = 1; //doesn't affect the scale
-            translateX = randomNumber(0, 80);
-            translateY = randomNumber(0, 80);
-          }
-
-          div.style.transform = `scale(${scale}) translate(${translateX}%, ${translateY}%) rotate(${rotate}deg)`;
+        // NOTE: USE SOME JAVA SCRIPT
+        /*
+      let rotation = 0;
+      document.addEventListener(
+        "click",
+        function () {
+          let min = 10;
+          let max = 40;
+          rotation += Math.random() * (max - min) + min;
+          document.body.style.transform = `rotate(${rotation}deg)`;
         });
-      }
-      document.addEventListener("click", randomize);
-       // let rotation = 0;
-        // document.addEventListener("click", function () {
-        //  let min = 10;
-         // let max = 40;
-         // rotation += Math.random() * (max - min) + min;
-         // document.body.style.transform = `rotate(${rotation}deg)`;
-        //});
-      
+        */
     </script>
   </body>
 </html>

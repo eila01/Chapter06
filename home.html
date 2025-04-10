@@ -118,3 +118,77 @@
     </script>
   </body>
 </html>
+
+<!---->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Off the Grid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <!-- Chapter 06 : Off The Grid -->
+    <!-- Apply A Haiku Off Grid -->
+    <!--Notes:
+          div tags live in a container = use to organize
+     -->
+  </head>
+  <body>
+    <div class="grid-container">
+      <div>A</div>
+      <div>radiant</div>
+
+      <div class="last">young</div>
+
+      <div>woman</div>
+      <div>to</div>
+      <div>light</div>
+      <div>the</div>
+
+      <div class="last">darkest</div>
+
+      <div>corners</div>
+      <div>of</div>
+
+      <div class="last">winter</div>
+    </div>
+
+    <script>
+      // name function
+      function randomNumber(min, max) {
+        return Math.random() * (min - max) + min;
+      }
+      // define div (gets all div from grid-container)
+      let divs = document.querySelectorAll(".grid-container div");
+
+      function randomize() {
+        // apply only to each of the div tags
+        divs.forEach(function (div) {
+          let scale = randomNumber(0.5, 1.2);
+          let translateX = randomNumber(0, 50);
+          let translateY = randomNumber(0, 20);
+          let rotate = randomNumber(0, 360);
+
+          // half of the time do this...
+          if (Math.random() > 0.5) {
+            scale = 1; //doesn't affect the scale
+            translateX = randomNumber(0, 80);
+            translateY = randomNumber(0, 80);
+          }
+
+          div.style.transform = `scale(${scale}) translate(${translateX}%, ${translateY}%) rotate(${rotate}deg)`;
+        });
+      }
+      document.addEventListener("click", randomize);
+       // let rotation = 0;
+        // document.addEventListener("click", function () {
+        //  let min = 10;
+         // let max = 40;
+         // rotation += Math.random() * (max - min) + min;
+         // document.body.style.transform = `rotate(${rotation}deg)`;
+        //});
+      
+    </script>
+  </body>
+</html>
