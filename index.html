@@ -44,10 +44,19 @@
         <div>Self</div>
       </div>
     </div>
-    <script>
-      // NOTE: USE SOME JAVA SCRIPT
-      var images = ['codeimage_01.png', 'codeimage_02.png', 'codeimage_03.png', 'codeimage_04', 'codeimage_05'];
-      document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
-    </script>
+    <div id="divID"></div>
+<script type="text/javascript">
+    var imgCount = 4;
+        var dir = 'assets/img/';
+        var randomCount = Math.round(Math.random() * (imgCount - 1)) + 1;
+        var images = new Array
+                images[1] = "codeimage_01.png",
+                images[2] = "codeimage_02.png",
+                images[3] = "codeimage_03.png",
+                images[4] = "codeimage_04.png",
+                images[5] = "codeimage_05.png",
+        document.body.style.backgroundImage = "url(" + dir + images[randomCount] + ")"; 
+   </script>
+
   </body>
 </html>
