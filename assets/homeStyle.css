@@ -22,7 +22,7 @@ body {
   overflow: hidden;
   /* NOTE: CHANGE BG*/
   /* background: url("img/flames.gif"); */
-  background-repeat: no-repeat;
+  
   background-position: center;
   background-size: cover;
   animation-name: fadeOut;
