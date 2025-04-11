@@ -27,6 +27,7 @@ body {
   background-size: cover;
   animation-name: fadeOut;
   animation-duration: 2s;
+  text-align: center;
 }
 
 h1{
@@ -127,6 +128,17 @@ aside.compatibility .software1:hover .actual {
 
 aside.compatibility .software1:hover .overlay {
   visibility: hidden;
+}
+
+.mainview {
+  background-image: url(img/bg-1.png);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  background-attachment: fixed;
+  position: relative;
+  top: 12px
 }
 
 * {
