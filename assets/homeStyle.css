@@ -29,6 +29,11 @@ body {
   animation-duration: 2s;
 }
 
+h1{
+  color:#698f3f;
+  font-size: 30px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -41,8 +46,10 @@ body {
 }
 
 .code {
-  font-family: "Libre Barcode 39 Text", system-ui;
   color: #698f3f;
+  text-shadow: 1px 1px 2px #698f3f;
+  font-family: "Libre Barcode 39 Text", system-ui;
+  
 }
 
 .art {
