@@ -49,13 +49,16 @@
     var imgCount = 4;
         var dir = 'assets/img/';
         var randomCount = Math.round(Math.random() * (imgCount - 1)) + 1;
+        document.addEventListener(
+        "click",
+        function () {
         var images = new Array
                 images[1] = "codeimage_01.png",
                 images[2] = "codeimage_02.png",
                 images[3] = "codeimage_03.png",
                 images[4] = "codeimage_04.png",
                 images[5] = "codeimage_05.png",
-        document.body.style.backgroundImage = "url(" + dir + images[randomCount] + ")"; 
+        document.body.style.backgroundImage = "url(" + dir + images[randomCount] + ")"; }
    </script>
 
   </body>
