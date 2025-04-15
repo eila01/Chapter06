@@ -99,8 +99,9 @@ aside.compatibility li {
 }
 
  a:hover {
-  font-size:110%;
+  font-size:210%;
   text-shadow: 1px 1px 2px #698f3f;
+  color: #698f3f;
 }
 
 .mainview {
