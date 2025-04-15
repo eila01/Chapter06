@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
     <!-- Haiku -->
-    <!--Notes:
+    <!--Notes: Click on Webpage to update background that is the poem but in binary code
          
      -->
   </head>
@@ -45,22 +45,20 @@
       </div>
     </div>
     <div id="divID"></div>
-<script type="text/javascript">
-    
-        document.addEventListener(
-        "click",
-        function () {
-          var imgCount = 4;
-        var dir = 'assets/img/';
+    <script type="text/javascript">
+      document.addEventListener("click", function () {
+        var imgCount = 4;
+        var dir = "assets/img/";
         var randomCount = Math.round(Math.random() * (imgCount - 1)) + 1;
-        var images = new Array
-                images[1] = "codeimage_01.png",
-                images[2] = "codeimage_02.png",
-                images[3] = "codeimage_03.png",
-                images[4] = "codeimage_04.png",
-                images[5] = "codeimage_05.png",
-        document.body.style.backgroundImage = "url(" + dir + images[randomCount] + ")"; });
-   </script>
-
+        var images = new Array();
+        (images[1] = "codeimage_01.png"),
+          (images[2] = "codeimage_02.png"),
+          (images[3] = "codeimage_03.png"),
+          (images[4] = "codeimage_04.png"),
+          (images[5] = "codeimage_05.png"),
+          (document.body.style.backgroundImage =
+            "url(" + dir + images[randomCount] + ")");
+      });
+    </script>
   </body>
 </html>
