@@ -100,6 +100,7 @@ aside.compatibility li {
 
  a:hover {
   font-size:110%;
+  text-shadow: 1px 1px 2px #698f3f;
 }
 
 .mainview {
